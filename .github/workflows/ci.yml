@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: checkout repo
-        run: actions/checkout@4
+        run: actions/checkout@v4
 
       - name: welcome message
         run: echo "Hi Abi You are awesome"
