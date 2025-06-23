@@ -20,8 +20,9 @@ jobs:
           - name: test file exist
             run: grep -i "dragon" dragon.txt
 
-          - name: read & list files
-            run: |
-                cat dragon.txt
-                ls
+          - name: read file
+            run: cat dragon.txt
+
+          - name: list
+            run: ls
             
