@@ -23,4 +23,5 @@ jobs:
           - name: read & list files
             run: |
                 cat dragon.txt
+                ls
             
