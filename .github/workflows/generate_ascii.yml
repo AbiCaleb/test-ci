@@ -1,0 +1,24 @@
+name: Generate-ascii
+
+on: push
+
+jobs:
+    ascii-job:
+        runs-on: ubuntu-latest
+        steps:
+          - name: checkout repo
+            uses: actions/checkout@v4
+
+          - name: install cowsay
+            run: sudo apt-get install cosway -y
+
+          - name: execute the command
+            run: cowsay -f dragon "Naa Nerupppu kakum dragon daa... grrwwrr..." >> dragon.txt
+
+          - name: test file exist
+            run: grep -i "dragon" dragon.txt
+
+          - name: read & list files
+            run: |
+                cat dragon.txt
+            
