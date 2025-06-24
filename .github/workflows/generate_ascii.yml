@@ -11,6 +11,9 @@ jobs:
 
           - name: list
             run: ls
-          
+
+          - name: give execute permission
+            run: chmod +x script.sh
+            
           - name: Execute the script
             run: ./script.sh
