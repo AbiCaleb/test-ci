@@ -7,13 +7,13 @@ echo "Listing Files"
 ls -l
 
 echo "generating cosway"
-cowsay -f dragon "Naa Nerupppu kakum dragon daa... grrwwrr..." >> dragon.txt
+cowsay -f monkey "Naa Nerupppu kakum dragon daa... grrwwrr..." >> monkey.txt
 
-echo "View the dragon"
-cat dragon.txt
+echo "View the monkey"
+cat monkey.txt
 
 echo "file exist test"
-grep -i "dragon" dragon.txt
+grep -i "monkey" monkey.txt
 
-echo "Listing Files after dragon file added"
+echo "Listing Files after monkey file added"
 ls -l
