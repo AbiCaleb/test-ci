@@ -9,20 +9,8 @@ jobs:
           - name: checkout repo
             uses: actions/checkout@v4
 
-          - name: install cowsay
-            run: |
-                sudo apt-get update
-                sudo apt-get install cowsay -y
-
-          - name: execute the command
-            run: cowsay -f dragon "Naa Nerupppu kakum dragon daa... grrwwrr..." >> dragon.txt
-
-          - name: test file exist
-            run: grep -i "dragon" dragon.txt
-
-          - name: read file
-            run: cat dragon.txt
-
           - name: list
             run: ls
-            
+          
+          - name: Execute the script
+            run: ./script.sh
